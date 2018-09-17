@@ -1,0 +1,33 @@
+{
+  "name": "PrivateBlockchainNotaryService",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,es2017,stage-0\"",
+    "build": "babel src -s -D -d dist --presets es2015,stage-0",
+    "start": "node dist",
+    "prestart": "npm run -s build"
+  },
+  "author": "Michael Zerna",
+  "license": "MIT",
+  "dependencies": {
+    "bitcoinjs-lib": "^4.0.1",
+    "bitcoinjs-message": "^2.0.0",
+    "body-parser": "^1.13.3",
+    "compression": "^1.5.2",
+    "cors": "^2.7.1",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.13.3",
+    "level": "^4.0.0",
+    "morgan": "^1.8.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
