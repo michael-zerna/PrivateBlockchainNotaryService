@@ -1,6 +1,6 @@
 # PrivateBlockchainNotaryService
 
-This is a example for setting up an Private Blockchainfor with Bitcoin Identity and register a Star via Webservice
+This is a example for setting up an Private Blockchain with Bitcoin Identity and register a Star via Webservice
 
 - Node.js framework RESTful API: Express
 - Node.js tested version: 9.5.0
